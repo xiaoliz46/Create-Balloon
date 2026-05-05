@@ -1,0 +1,29 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev'
+}
+
+version = mod_version
+group = mod_group
+base.archivesName = mod_id
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    version = neoforge_version
+    parchment {
+        minecraftVersion = "1.21.1"
+        mappingsVersion = "2024.11.17"
+    }
+    mods {
+        create_balloon {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+dependencies {
+    implementation files('mod flies/create-1.21.1-6.0.10.jar')
+    implementation files('mod flies/sable-neoforge-1.21.1-1.1.3.jar')
+    implementation files('mod flies/create-aeronautics-bundled-1.21.1-1.1.3.jar')
+    implementation files('libs/sable-companion-common-1.21.1-1.5.0.jar')
+}
