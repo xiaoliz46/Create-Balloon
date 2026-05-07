@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "create_balloon:hot_air_balloon" },
+    { "item": "minecraft:orange_dye" }
+  ],
+  "result": {
+    "id": "create_balloon:hot_air_balloon",
+    "count": 1,
+    "components": {
+      "minecraft:block_state": { "color": "orange" }
+    }
+  }
+}
