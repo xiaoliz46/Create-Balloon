@@ -1,5 +1,7 @@
 # Create Balloon (机械动力：气球)
 
+Modrinth: https://modrinth.com/mod/create-balloon
+
 > All content in this repository is AI-generated. | 本仓库所有内容为AI制作。
 
 [English](#english) | [中文](#中文)
