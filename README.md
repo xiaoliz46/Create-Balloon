@@ -14,7 +14,7 @@ Adds inflatable hot air balloons to Create: Aeronautics.
 
 | Block | Description |
 |-------|-------------|
-| **Inflatable Hot Air Balloon** | 100 kpg lift each. Aeronautics balloon compatible. Recipe: 1× Aeronautics balloon |
+| **Inflatable Hot Air Balloon** | 100 kpg lift each. Aeronautics envelope compatible. Recipe: 1× Aeronautics Envelope |
 | **Balloon Controller** | Right-click to take control. Recipe: Sail + Brass Casing |
 
 ### Controls
@@ -36,6 +36,10 @@ Adds inflatable hot air balloons to Create: Aeronautics.
 | No signal | Hover |
 | Both sides powered | No effect |
 
+### Config
+
+`liftForce` in `config/create_balloon-common.toml` — lift capacity per balloon in kpg (default 100, range 1~10000). Change in-game via Mods menu.
+
 ### Dependencies
 
 - Minecraft 1.21.1
@@ -48,6 +52,7 @@ Adds inflatable hot air balloons to Create: Aeronautics.
 
 MIT
 
+
 ---
 
 ## 中文
@@ -58,7 +63,7 @@ MIT
 
 | 方块 | 说明 |
 |------|------|
-| **充气热气球** | 100 kpg 升力/个，航空学气囊兼容，合成：1×航空学气球 |
+| **充气热气球** | 100 kpg 升力/个，航空学气囊兼容，合成：1×航空学信封 |
 | **热气球控制器** | 右键锁定操控，合成：风帆+黄铜机壳 |
 
 ### 操控
@@ -80,6 +85,10 @@ MIT
 | 无信号 | 悬停 |
 | 两侧同时通入 | 无效 |
 
+### 配置
+
+`config/create_balloon-common.toml` 中 `liftForce` — 每气球升力（kpg），默认 100，范围 1~10000。游戏中 Mods 菜单可调。
+
 ### 依赖
 
 - Minecraft 1.21.1
@@ -91,3 +100,5 @@ MIT
 ### 许可
 
 MIT
+
+注意：本模组不包含任何来自 Create 或 Aeronautics 的贴图文件。所有视觉资源均在运行时从已安装的这些模组中引用。
