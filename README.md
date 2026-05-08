@@ -3,6 +3,7 @@
 Modrinth: https://modrinth.com/mod/create-balloon
 
 > All content in this repository is AI-generated. | 本仓库所有内容为AI制作。
+> Source code updates may not be timely. | 源代码更新可能会不及时。
 
 [English](#english) | [中文](#中文)
 
