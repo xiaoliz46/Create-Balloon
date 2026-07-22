@@ -1,0 +1,79 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev'
+}
+
+version = mod_version
+group = mod_group
+base.archivesName = mod_id
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    version = neoforge_version
+    parchment {
+        minecraftVersion = "1.21.1"
+        mappingsVersion = "2024.11.17"
+    }
+    mods {
+        create_balloon {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+dependencies {
+    implementation files('mod flies/create-1.21.1-6.0.10.jar')
+    implementation files('mod flies/sable-neoforge-1.21.1-1.1.3.jar')
+    implementation files('mod flies/create-aeronautics-bundled-1.21.1-1.1.3.jar')
+    implementation files('libs/sable-companion-common-1.21.1-1.5.0.jar')
+    implementation files('mod flies/drivebywire-0.2.9.jar')
+    implementation files('mod flies/aeroworks-1.2.10.jar')
+    implementation files('mod flies/cc-tweaked-1.21.1-forge-1.119.0.jar')
+}
+
+// Auto-increment patch version before each build
+tasks.register('bumpVersion') {
+    doLast {
+        def propsFile = file('gradle.properties')
+        def props = new Properties()
+        props.load(propsFile.newReader())
+        def ver = props.getProperty('mod_version')
+        def parts = ver.tokenize('.')
+        parts[2] = (parts[2] as int) + 1
+        def newVer = parts.join('.')
+        props.setProperty('mod_version', newVer)
+        props.store(propsFile.newWriter(), null)
+        project.version = newVer
+        println "Bumped: ${ver} -> ${newVer}"
+    }
+}
+
+tasks.register('deploy') {
+    dependsOn bumpVersion, jar
+    def propsFile = file('gradle.properties')
+    doLast {
+        def props = new Properties()
+        props.load(propsFile.newReader())
+        def ver = props.getProperty('mod_version')
+        def jarFile = layout.buildDirectory.file("libs/${mod_id}-${ver}.jar").get().asFile
+        // Archive jar
+        def archiveDir = file("versions/release/beta/${ver}")
+        archiveDir.mkdirs()
+        copy { from jarFile; into archiveDir }
+        // Backup full source
+        def srcBackup = file("versions/source/${ver}")
+        srcBackup.mkdirs()
+        copy {
+            from('src') { into 'src' }
+            from('build.gradle')
+            from('gradle.properties')
+            from('settings.gradle')
+            into srcBackup
+        }
+        // Deploy to game
+        def gameDir = new File("E:/Games/Minecraft/.minecraft/versions/1.21.1-NeoForge_21.1.227/mods")
+        gameDir.eachFile { if (it.name.startsWith(mod_id) && it.name != "${mod_id}-${ver}.jar") it.delete() }
+        copy { from jarFile; into gameDir }
+        println "Deployed ${ver} to game + release/beta + source backup"
+    }
+}

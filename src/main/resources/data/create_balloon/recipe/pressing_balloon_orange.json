@@ -1,0 +1,9 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    { "item": "create_balloon:hot_air_balloon_orange" }
+  ],
+  "results": [
+    { "id": "aeronautics:orange_envelope" }
+  ]
+}

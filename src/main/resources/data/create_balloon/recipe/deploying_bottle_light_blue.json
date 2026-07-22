@@ -1,0 +1,10 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    { "item": "aeronautics:light_blue_envelope" },
+    { "item": "minecraft:glass_bottle" }
+  ],
+  "results": [
+    { "id": "create_balloon:hot_air_balloon_light_blue" }
+  ]
+}

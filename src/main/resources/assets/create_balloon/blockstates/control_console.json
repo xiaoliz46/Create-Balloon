@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "create_balloon:block/hot_balloon_control", "y": 0 },
+    "facing=east":  { "model": "create_balloon:block/hot_balloon_control", "y": 90 },
+    "facing=south": { "model": "create_balloon:block/hot_balloon_control", "y": 180 },
+    "facing=west":  { "model": "create_balloon:block/hot_balloon_control", "y": 270 }
+  }
+}

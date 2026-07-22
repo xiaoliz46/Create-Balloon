@@ -1,0 +1,10 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    { "item": "aeronautics:magenta_envelope" },
+    { "item": "minecraft:bucket" }
+  ],
+  "results": [
+    { "id": "create_balloon:hot_air_balloon_magenta" }
+  ]
+}

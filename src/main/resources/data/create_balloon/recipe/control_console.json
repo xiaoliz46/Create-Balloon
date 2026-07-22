@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S",
+    "H",
+    "B"
+  ],
+  "key": {
+    "S": { "item": "create:white_sail" },
+    "H": { "item": "create:shaft" },
+    "B": { "item": "create:brass_sheet" }
+  },
+  "result": {
+    "id": "create_balloon:control_console",
+    "count": 1
+  }
+}

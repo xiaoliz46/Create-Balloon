@@ -1,0 +1,10 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    { "item": "aeronautics:light_gray_envelope" },
+    { "item": "minecraft:bucket" }
+  ],
+  "results": [
+    { "id": "create_balloon:hot_air_balloon_light_gray" }
+  ]
+}

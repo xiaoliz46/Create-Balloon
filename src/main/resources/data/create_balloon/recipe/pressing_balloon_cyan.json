@@ -1,0 +1,9 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    { "item": "create_balloon:hot_air_balloon_cyan" }
+  ],
+  "results": [
+    { "id": "aeronautics:cyan_envelope" }
+  ]
+}

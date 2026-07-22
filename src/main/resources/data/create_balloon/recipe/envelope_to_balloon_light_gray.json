@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "aeronautics:light_gray_envelope" }
+  ],
+  "result": {
+    "id": "create_balloon:hot_air_balloon_light_gray",
+    "count": 1
+  }
+}

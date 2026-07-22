@@ -1,0 +1,9 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    { "item": "create_balloon:hot_air_balloon_magenta" }
+  ],
+  "results": [
+    { "id": "create_balloon:hot_air_balloon" }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "color=white": {"model":"create_balloon:block/inflated_wool"},
+    "color=orange": {"model":"create_balloon:block/inflated_wool_orange"},
+    "color=magenta": {"model":"create_balloon:block/inflated_wool_magenta"},
+    "color=light_blue": {"model":"create_balloon:block/inflated_wool_light_blue"},
+    "color=yellow": {"model":"create_balloon:block/inflated_wool_yellow"},
+    "color=lime": {"model":"create_balloon:block/inflated_wool_lime"},
+    "color=pink": {"model":"create_balloon:block/inflated_wool_pink"},
+    "color=gray": {"model":"create_balloon:block/inflated_wool_gray"},
+    "color=light_gray": {"model":"create_balloon:block/inflated_wool_light_gray"},
+    "color=cyan": {"model":"create_balloon:block/inflated_wool_cyan"},
+    "color=purple": {"model":"create_balloon:block/inflated_wool_purple"},
+    "color=blue": {"model":"create_balloon:block/inflated_wool_blue"},
+    "color=brown": {"model":"create_balloon:block/inflated_wool_brown"},
+    "color=green": {"model":"create_balloon:block/inflated_wool_green"},
+    "color=red": {"model":"create_balloon:block/inflated_wool_red"},
+    "color=black": {"model":"create_balloon:block/inflated_wool_black"}
+  }
+}

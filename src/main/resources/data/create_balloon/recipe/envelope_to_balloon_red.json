@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "aeronautics:red_envelope" }
+  ],
+  "result": {
+    "id": "create_balloon:hot_air_balloon_red",
+    "count": 1
+  }
+}

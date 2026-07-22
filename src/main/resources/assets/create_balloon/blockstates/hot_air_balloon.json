@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "color=white":      { "model": "create_balloon:block/hot_air_balloon_white" },
+    "color=orange":     { "model": "create_balloon:block/hot_air_balloon_orange" },
+    "color=magenta":    { "model": "create_balloon:block/hot_air_balloon_magenta" },
+    "color=light_blue": { "model": "create_balloon:block/hot_air_balloon_light_blue" },
+    "color=yellow":     { "model": "create_balloon:block/hot_air_balloon_yellow" },
+    "color=lime":       { "model": "create_balloon:block/hot_air_balloon_lime" },
+    "color=pink":       { "model": "create_balloon:block/hot_air_balloon_pink" },
+    "color=gray":       { "model": "create_balloon:block/hot_air_balloon_gray" },
+    "color=light_gray": { "model": "create_balloon:block/hot_air_balloon_light_gray" },
+    "color=cyan":       { "model": "create_balloon:block/hot_air_balloon_cyan" },
+    "color=purple":     { "model": "create_balloon:block/hot_air_balloon_purple" },
+    "color=blue":       { "model": "create_balloon:block/hot_air_balloon_blue" },
+    "color=brown":      { "model": "create_balloon:block/hot_air_balloon_brown" },
+    "color=green":      { "model": "create_balloon:block/hot_air_balloon_green" },
+    "color=red":        { "model": "create_balloon:block/hot_air_balloon_red" },
+    "color=black":      { "model": "create_balloon:block/hot_air_balloon_black" }
+  }
+}
